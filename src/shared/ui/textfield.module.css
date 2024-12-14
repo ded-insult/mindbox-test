@@ -1,0 +1,16 @@
+.leftContent {
+  margin-left: 12px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+
+  width: 100%;
+  gap: 12px;
+
+  input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,12 @@
+.main {
+  max-width: 700px;
+  margin: 12px auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+  margin-top: 24px;
+}
