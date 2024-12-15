@@ -20,10 +20,8 @@ export const useTodo = () => {
   const [filter, setFilter] = useState<FilterStatus>("all");
   const [todoText, setTodoText] = useState("");
 
-  const test = Object.entries(todos);
-
   const filteredTodos = useMemo(() => {
-    return test.filter(([_, todo]) => {
+    return Object.entries(todos).filter(([_, todo]) => {
       if (filter === "completed") {
         return todo.isCompleted === "completed";
       } else if (filter === "in-progress") {

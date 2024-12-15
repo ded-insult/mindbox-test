@@ -12,19 +12,17 @@ export type Task = {
 export type Tasks = { [key: string]: Task };
 
 interface Props {
-  actions?: ReactNode;
   todo: Task;
 }
 
 export const TaskItem = memo((props: Props) => {
-  const { todo, actions } = props;
+  const { todo } = props;
   const { children, isCompleted } = todo;
 
   return (
     <div className={s.main}>
       <StatusCircle status={isCompleted} />
       {children}
-      {actions}
     </div>
   );
 });
