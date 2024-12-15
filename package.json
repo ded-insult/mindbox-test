@@ -2,9 +2,11 @@
   "name": "webpack-config",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://ded-insult.github.io/mindbox-test",
   "scripts": {
     "start:prod": "webpack --env mode=production --config ./config/webpack.config.js",
     "start:dev": "webpack serve --open --env mode=development --config ./config/webpack.config.js ",
+    "start:deploy": "webpack --env mode=production --config ./config/webpack.config.js && gh-pages -d dist",
     "test": "jest",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/"
   },
@@ -27,6 +29,7 @@
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.2.1",
     "css-loader": "6.6.0",
+    "gh-pages": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
